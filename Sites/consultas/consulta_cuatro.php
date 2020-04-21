@@ -21,7 +21,7 @@
     </tr>
   <?php
 	
-  		echo "<tr> <td>$dinero</tr>";
+  		echo "<tr> <td>$dinero[0]</tr>";
 	
   ?>
 	</table>

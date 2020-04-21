@@ -21,7 +21,7 @@
     </tr>
   <?php
 	foreach ($paises as $pais) {
-  		echo "<tr><td>$pais</td></tr>";
+  		echo "<tr><td>$pais[0]</td></tr>";
 	}
   ?>
 	</table>
