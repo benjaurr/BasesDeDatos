@@ -6,6 +6,7 @@
   <p style="text-align:center;">Consultas a la base de datos</p>
   </div>
   <br>
+
   <div class="p-3 mb-2 bg-success text-white">
   <h3 align="center"> ¿Quieres ver todos los username y correos?</h3>
 
@@ -15,9 +16,7 @@
   </form>
   </div>
   
-  <br>
-  <br>
-  <br>
+  
   <div class="p-3 mb-2 bg-danger text-white">
   <h3 align="center"> ¿Quieres buscar todas las cuidades de un país?</h3>
 
@@ -28,9 +27,7 @@
     <input type="submit" value="Buscar">
   </form>
   </div>
-  <br>
-  <br>
-  <br>
+
 
   <div class="p-3 mb-2 bg-info text-white">
   <h3 align="center"> ¿Quieres conocer todos los países en los que un usuario se ha hospedado con hoteles de la agencia?</h3>
@@ -41,9 +38,6 @@
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
-  <br>
-  <br>
-  <br>
   </div>
 
   <div class="p-3 mb-2 bg-primary text-white">
@@ -79,9 +73,6 @@
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
-  <br>
-  <br>
-  <br>
   </div>
   <br>
   <br>
