@@ -7,7 +7,7 @@
   require("../config/conexion.php");
 
 
- 	$query = "SELECT usuario_id, nombre, fecha_llegada, fecha_salida FROM Usuarios, Reservas, Hoteles WHERE fecha_llegada = "2020-01-01" AND fecha_salida = "2020-03-31";";
+ 	$query = "SELECT Usuarios.usuario_id, Usuarios.nombre, Reservas.fecha_llegada, Reservas.fecha_salida FROM Usuarios, Reservas, Hoteles WHERE Usuarios.usuario_id = Reservas.usuarios_id AND Reservas.id_hotel = Hoteles.id_hotel AND fecha_llegada = "2020-01-01" AND fecha_salida = "2020-03-31";";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$datos = $result -> fetchAll();
