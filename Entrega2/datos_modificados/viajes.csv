@@ -1,86 +1,86 @@
-1, Roma, Florencia, 08:54:00, Tren, 800, 5, 35
-2, Chantilly, París, 11:12:00, Tren, 800, 4, 32
-3, París, Florencia, 23:50:00, Tren, 800, 3, 40
-4, Nancy, Chantilly, 14:45:00, Bus, 45, 6, 20
-5, París, Bruselas, 15:45:00, Avión, 150, 2, 100
-6, París, Florencia, 23:23:00, Tren, 800, 3, 40
-7, Westminster, Bruselas, 20:23:00, Avión, 200, 3, 150
-8, París, Chantilly, 09:56:00, Tren, 800, 4, 32
-9, Chantilly, París, 11:12:00, Bus, 45, 6, 20
-10, Antwerp, Bruselas, 23:32:00, Tren, 800, 1, 15
-11, Dresde, Bruselas, 11:22:00, Tren, 800, 3, 47
-12, Florencia, Roma, 11:34:00, Tren, 800, 5, 35
-13, Milán, Dresde, 10:43:00, Tren, 800, 3, 42
-14, París, Bruselas, 13:42:00, Tren, 800, 5, 45
-15, Nancy, Chantilly, 23:23:00, Bus, 45, 6, 20
-16, Florencia, Milán, 21:55:00, Tren, 800, 3, 32
-17, Westminster, Bruselas, 12:34:00, Avión, 200, 3, 150
-18, Antwerp, Bruselas, 09:56:00, Tren, 800, 1, 15
-19, Chantilly, Nancy, 16:12:00, Tren, 800, 3, 32
-20, Roma, Florencia, 08:54:00, Bus, 45, 6, 25
-21, Florencia, Milán, 21:55:00, Bus, 45, 6, 20
-22, Milán, Dresde, 07:12:00, Tren, 800, 3, 42
-23, Milán, Florencia, 07:12:00, Tren, 800, 3, 32
-24, París, Roma, 21:34:00, Avión, 200, 3, 120
-25, París, Chantilly, 09:56:00, Bus, 45, 6, 20
-26, Antwerp, Bruselas, 09:56:00, Bus, 45, 1, 12
-27, París, Chantilly, 15:34:00, Tren, 800, 4, 32
-28, Bruselas, París, 09:23:00, Tren, 800, 3, 45
-29, París, Chantilly, 15:34:00, Bus, 45, 6, 20
-30, Bruselas, París, 15:21:00, Tren, 800, 3, 45
-31, Dresde, Milán, 21:55:00, Tren, 800, 3, 42
-32, París, Bruselas, 23:43:00, Avión, 150, 2, 100
-33, París, Roma, 13:15:00, Avión, 200, 3, 120
-34, Milán, Florencia, 18:56:00, Bus, 45, 6, 20
-35, Westminster, Bruselas, 15:55:00, Avión, 200, 3, 150
-36, Antwerp, Bruselas, 23:32:00, Bus, 45, 1, 12
-37, Florencia, París, 14:45:00, Tren, 800, 3, 40
-38, Bruselas, Westminster, 18:54:00, Avión, 200, 3, 150
-39, Bruselas, París, 22:43:00, Tren, 800, 5, 45
-40, Roma, Florencia, 13:42:00, Bus, 45, 6, 25
-41, Roma, París, 06:17:00, Avión, 200, 3, 120
-42, Bruselas, París, 22:12:00, Avión, 150, 2, 100
-43, Milán, Florencia, 07:12:00, Bus, 45, 6, 20
-44, Dresde, Milán, 23:23:00, Tren, 800, 3, 42
-45, Roma, París, 23:56:00, Avión, 200, 3, 120
-46, Bruselas, París, 12:50:00, Avión, 150, 2, 100
-47, París, Bruselas, 08:54:00, Tren, 800, 5, 45
-48, Florencia, Milán, 10:43:00, Bus, 45, 6, 20
-49, Nancy, Chantilly, 23:23:00, Tren, 800, 3, 32
-50, Westminster, Bruselas, 10:05:00, Avión, 200, 3, 150
-51, Bruselas, Antwerp, 20:42:00, Bus, 45, 1, 12
-52, Dresde, Milán, 11:23:00, Tren, 800, 3, 42
-53, Bruselas, París, 08:30:00, Avión, 150, 2, 100
-54, Bruselas, Antwerp, 11:34:00, Bus, 45, 1, 12
-55, Bruselas, Antwerp, 20:42:00, Tren, 800, 1, 15
-56, Bruselas, Dresde, 09:56:00, Tren, 800, 1, 47
-57, Bruselas, Dresde, 20:42:00, Tren, 800, 1, 47
-58, Bruselas, Westminster, 22:30:00, Avión, 200, 3, 150
-59, Chantilly, París, 22:22:00, Bus, 45, 6, 20
-60, Florencia, Roma, 11:34:00, Bus, 45, 6, 25
-61, Roma, Florencia, 13:42:00, Tren, 800, 5, 35
-62, París, Florencia, 07:23:00, Tren, 800, 3, 40
-63, Bruselas, Westminster, 09:55:00, Avión, 200, 3, 150
-64, Chantilly, París, 22:22:00, Tren, 800, 4, 32
-65, Roma, París, 14:45:00, Avión, 200, 3, 120
-66, Bruselas, París, 16:35:00, Avión, 150, 2, 100
-67, Chantilly, Nancy, 16:12:00, Bus, 45, 6, 20
-68, París, Bruselas, 11:34:00, Tren, 800, 5, 45
-69, Florencia, Milán, 10:43:00, Tren, 800, 3, 32
-70, París, Bruselas, 09:30:00, Avión, 150, 2, 100
-71, Milán, Florencia, 18:56:00, Tren, 800, 3, 32
-72, Nancy, Chantilly, 14:45:00, Tren, 800, 3, 32
-73, Florencia, París, 08:23:00, Tren, 800, 3, 49
-74, Milán, Dresde, 18:56:00, Tren, 800, 3, 42
-75, Chantilly, Nancy, 08:23:00, Bus, 45, 6, 20
-76, Dresde, Bruselas, 23:32:00, Tren, 800, 1, 47
-77, París, Roma, 07:12:00, Avión, 200, 3, 120
-78, Florencia, Roma, 22:43:00, Bus, 45, 6, 25
-79, Bruselas, Dresde, 11:34:00, Tren, 800, 1, 47
-80, Bruselas, Westminster, 14:25:00, Avión, 200, 3, 150
-81, Bruselas, Antwerp, 11:34:00, Tren, 800, 1, 15
-82, Florencia, Roma, 22:43:00, Tren, 800, 5, 35
-83, Bruselas, Westminster, 11:33:00, Avión, 200, 3, 150
-84, Florencia, París, 16:12:00, Tren, 800, 3, 40
-85, Chantilly, Nancy, 08:23:00, Tren, 800, 3, 32
-86, Dresde, Bruselas, 09:34:00, Tren, 800, 3, 47
+1,Roma,Florencia,08:54:00,Tren,800,5,35
+2,Chantilly,París,11:12:00,Tren,800,4,32
+3,París,Florencia,23:50:00,Tren,800,3,40
+4,Nancy,Chantilly,14:45:00,Bus,45,6,20
+5,París,Bruselas,15:45:00,Avión,150,2,100
+6,París,Florencia,23:23:00,Tren,800,3,40
+7,Westminster,Bruselas,20:23:00,Avión,200,3,150
+8,París,Chantilly,09:56:00,Tren,800,4,32
+9,Chantilly,París,11:12:00,Bus,45,6,20
+10,Antwerp,Bruselas,23:32:00,Tren,800,1,15
+11,Dresde,Bruselas,11:22:00,Tren,800,3,47
+12,Florencia,Roma,11:34:00,Tren,800,5,35
+13,Milán,Dresde,10:43:00,Tren,800,3,42
+14,París,Bruselas,13:42:00,Tren,800,5,45
+15,Nancy,Chantilly,23:23:00,Bus,45,6,20
+16,Florencia,Milán,21:55:00,Tren,800,3,32
+17,Westminster,Bruselas,12:34:00,Avión,200,3,150
+18,Antwerp,Bruselas,09:56:00,Tren,800,1,15
+19,Chantilly,Nancy,16:12:00,Tren,800,3,32
+20,Roma,Florencia,08:54:00,Bus,45,6,25
+21,Florencia,Milán,21:55:00,Bus,45,6,20
+22,Milán,Dresde,07:12:00,Tren,800,3,42
+23,Milán,Florencia,07:12:00,Tren,800,3,32
+24,París,Roma,21:34:00,Avión,200,3,120
+25,París,Chantilly,09:56:00,Bus,45,6,20
+26,Antwerp,Bruselas,09:56:00,Bus,45,1,12
+27,París,Chantilly,15:34:00,Tren,800,4,32
+28,Bruselas,París,09:23:00,Tren,800,3,45
+29,París,Chantilly,15:34:00,Bus,45,6,20
+30,Bruselas,París,15:21:00,Tren,800,3,45
+31,Dresde,Milán,21:55:00,Tren,800,3,42
+32,París,Bruselas,23:43:00,Avión,150,2,100
+33,París,Roma,13:15:00,Avión,200,3,120
+34,Milán,Florencia,18:56:00,Bus,45,6,20
+35,Westminster,Bruselas,15:55:00,Avión,200,3,150
+36,Antwerp,Bruselas,23:32:00,Bus,45,1,12
+37,Florencia,París,14:45:00,Tren,800,3,40
+38,Bruselas,Westminster,18:54:00,Avión,200,3,150
+39,Bruselas,París,22:43:00,Tren,800,5,45
+40,Roma,Florencia,13:42:00,Bus,45,6,25
+41,Roma,París,06:17:00,Avión,200,3,120
+42,Bruselas,París,22:12:00,Avión,150,2,100
+43,Milán,Florencia,07:12:00,Bus,45,6,20
+44,Dresde,Milán,23:23:00,Tren,800,3,42
+45,Roma,París,23:56:00,Avión,200,3,120
+46,Bruselas,París,12:50:00,Avión,150,2,100
+47,París,Bruselas,08:54:00,Tren,800,5,45
+48,Florencia,Milán,10:43:00,Bus,45,6,20
+49,Nancy,Chantilly,23:23:00,Tren,800,3,32
+50,Westminster,Bruselas,10:05:00,Avión,200,3,150
+51,Bruselas,Antwerp,20:42:00,Bus,45,1,12
+52,Dresde,Milán,11:23:00,Tren,800,3,42
+53,Bruselas,París,08:30:00,Avión,150,2,100
+54,Bruselas,Antwerp,11:34:00,Bus,45,1,12
+55,Bruselas,Antwerp,20:42:00,Tren,800,1,15
+56,Bruselas,Dresde,09:56:00,Tren,800,1,47
+57,Bruselas,Dresde,20:42:00,Tren,800,1,47
+58,Bruselas,Westminster,22:30:00,Avión,200,3,150
+59,Chantilly,París,22:22:00,Bus,45,6,20
+60,Florencia,Roma,11:34:00,Bus,45,6,25
+61,Roma,Florencia,13:42:00,Tren,800,5,35
+62,París,Florencia,07:23:00,Tren,800,3,40
+63,Bruselas,Westminster,09:55:00,Avión,200,3,150
+64,Chantilly,París,22:22:00,Tren,800,4,32
+65,Roma,París,14:45:00,Avión,200,3,120
+66,Bruselas,París,16:35:00,Avión,150,2,100
+67,Chantilly,Nancy,16:12:00,Bus,45,6,20
+68,París,Bruselas,11:34:00,Tren,800,5,45
+69,Florencia,Milán,10:43:00,Tren,800,3,32
+70,París,Bruselas,09:30:00,Avión,150,2,100
+71,Milán,Florencia,18:56:00,Tren,800,3,32
+72,Nancy,Chantilly,14:45:00,Tren,800,3,32
+73,Florencia,París,08:23:00,Tren,800,3,49
+74,Milán,Dresde,18:56:00,Tren,800,3,42
+75,Chantilly,Nancy,08:23:00,Bus,45,6,20
+76,Dresde,Bruselas,23:32:00,Tren,800,1,47
+77,París,Roma,07:12:00,Avión,200,3,120
+78,Florencia,Roma,22:43:00,Bus,45,6,25
+79,Bruselas,Dresde,11:34:00,Tren,800,1,47
+80,Bruselas,Westminster,14:25:00,Avión,200,3,150
+81,Bruselas,Antwerp,11:34:00,Tren,800,1,15
+82,Florencia,Roma,22:43:00,Tren,800,5,35
+83,Bruselas,Westminster,11:33:00,Avión,200,3,150
+84,Florencia,París,16:12:00,Tren,800,3,40
+85,Chantilly,Nancy,08:23:00,Tren,800,3,32
+86,Dresde,Bruselas,09:34:00,Tren,800,3,47
