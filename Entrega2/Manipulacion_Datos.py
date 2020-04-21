@@ -58,6 +58,13 @@ with open('datos_modificados/viajes.csv', 'w+', encoding='UTF-8') as file:
     escritor_viajes = csv.writer(file)
     escritor_viajes.writerow(['id_viaje', 'id_ciudad_origen', 'id_ciudad_destino', 'hora_de_salida', 'medio', 'capacidad_maxima', 'duracion', 'precio'])
     for idviaje, viaje in enumerate(viajes, 1):
+        cdo = viaje[0]
+        cdd = viaje[1]
+        for idc, ciudad in enumerate(ciudades, 1):
+            if ciudad[0] == cdo:
+                viaje[0] = idc
+            elif ciudad[0] == cdd:
+                viaje[1] = idc
         file.write(f'{idviaje},{viaje[0]},{viaje[1]},{viaje[2]},{viaje[3]},{viaje[4]},{viaje[5]},{viaje[6]}\n')
 
 with open('datos_modificados/tickets.csv', 'w+', encoding='UTF-8') as file:
