@@ -75,5 +75,10 @@ for hotel in hoteles:
     escritor_hoteles.writerow([hotel[0], hotel[1], hotel[2], hotel[3], hotel[4]])
 file_hoteles.close()
 
-file_reservas
+file_reservas = open('datos_modificados/reservas.csv', 'w', encoding='UTF-8')
+escritor_reservas = csv.writer(file_reservas)
+for rid, reserva in enumerate(reservas, 1):
+    escritor_reservas.writerow([rid, reserva[0], reserva[1], reserva[2], reserva[3]])
+file_reservas.close()
+
 print(reservas)
