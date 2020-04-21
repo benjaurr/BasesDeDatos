@@ -20,8 +20,9 @@
       <th>Dinero Gastado</th>
     </tr>
   <?php
-	
-  		echo "<tr> <td>$dinero[0]</tr>";
+	    foreach ($dinero as $p) {
+          echo "<tr> <td>$p[0]</td> </tr>";
+           }
 	
   ?>
 	</table>
