@@ -30,4 +30,6 @@ with open('datos_modificados/paises.csv', 'w+', encoding='UTF-8') as file:
     for pais in paises:
         file.write(f'{pais[0], pais[1]}\n')
 
-with open('datos_modificados/ciudades.csv', 'w+')
+with open('datos_modificados/ciudades.csv', 'w+', encoding='UTF-8') as file:
+    for idciudad, ciudad in enumerate(ciudades, 1):
+        file.write(f'{idciudad}, {ciudad[0]}, {ciudad[1]}\n')
