@@ -7,7 +7,7 @@
 
   $username = $_POST["username"];
 
- 	$query = "SELECT Paises.pnombre FROM Ciudades, (SELECT Hoteles.idcuidad FROM Hoteles, (SELECT Reservas.idhotel FROM Reservas WHERE Reservas.usuario_id = (SELECT Usuarios.usuario_id FROM Usuarios WHERE Usuarios.username = $username)));";
+  $query = "SELECT Ciudades.pnombre FROM Usuarios, Reservas, Ciudades, Hoteles WHERE Usuarios.usuario_id = Reservas.usuario_id AND Reservas.id_hotel = Hoteles.id_hotel AND Hoteles.id_ciudad = Ciudades.id_ciudad AND Usuarios.username LIKE '$username';";
   #Podria ser IN
    $result = $db -> prepare($query);
 	$result -> execute();
