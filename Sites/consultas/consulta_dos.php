@@ -6,7 +6,7 @@
   require("../config/conexion.php"); #Llama a conexión, crea el objeto PDO y obtiene la variable $db
 
   $pais = $_POST["pais"];
-  $query = "SELECT Ciudades.cnombre FROM Ciudades, Paises WHERE Paises.pnombre LIKE '%$pais%';";
+  $query = "SELECT Ciudades.cnombre FROM Ciudades, Paises WHERE Ciudades.pnombre = Paises.pnombre AND Paises.pnombre LIKE '%$pais%';";
   $result = $db -> prepare($query);
   $result -> execute();
   $cuidades = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo

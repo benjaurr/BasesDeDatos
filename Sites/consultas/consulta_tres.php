@@ -7,7 +7,7 @@
 
   $username = $_POST["username"];
 
- 	$query = "SELECT pnombre FROM Cuidades, (SELECT idcuidad FROM Hoteles, (SELECT idhotel FROM Reservas WHERE uid = (SELECT uid FROM Usuarios WHERE username = $username)));";
+ 	$query = "SELECT Paises.pnombre FROM Ciudades, (SELECT Hoteles.idcuidad FROM Hoteles, (SELECT Reservas.idhotel FROM Reservas WHERE Reservas.usuario_id = (SELECT Usuarios.usuario_id FROM Usuarios WHERE Usuarios.username = $username)));";
   #Podria ser IN
    $result = $db -> prepare($query);
 	$result -> execute();
