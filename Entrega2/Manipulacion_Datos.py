@@ -1,2 +1,1 @@
-asdfasd
-fadsfasdf
+print("Hello world")
