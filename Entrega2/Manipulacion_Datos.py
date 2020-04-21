@@ -1,10 +1,13 @@
+import csv
+
+
 paises = list()
 ciudades = list()
 usuarios = list()
 viajes = list()
 tickets = list()
 hoteles = list()
-reservar = list()
+reservas = list()
 
 
 with open('datos_originales/ciudades-paises.csv', 'r', encoding='UTF-8') as file:
@@ -18,18 +21,24 @@ with open('datos_originales/ciudades-paises.csv', 'r', encoding='UTF-8') as file
 
 
 with open("datos_originales/tickets-destinos.csv", 'r', encoding='UTF-8') as file:
-     file.readline()
-     for line in file:
-         data = line.strip().split(',')
-         if [data[1], data[2], data[3], data[5], data[6], data[4], data[7]] not in viajes:
+    file.readline()
+    for line in file:
+        data = line.strip().split(',')
+        if [data[1], data[2], data[3], data[5], data[6], data[4], data[7]] not in viajes:
             viajes.append([data[1], data[2], data[3], data[5], data[6], data[4], data[7]])
-         id_viaje = viajes.index([data[1], data[2], data[3], data[5], data[6], data[4], data[7]]) + 1
-         tickets.append([data[0], id_viaje, data[9], data[8], data[10]])
+        id_viaje = viajes.index([data[1], data[2], data[3], data[5], data[6], data[4], data[7]]) + 1
+        tickets.append([data[0], id_viaje, data[9], data[8], data[10]])
 
 
 with open("datos_originales/usuarios-reservas-hoteles.csv", 'r', encoding='UTF-8') as file:
+    print(file.readline().strip())
     for line in file:
-        print(line)
+        data = line.strip().split(',')
+        if [data[0], data[2], data[1], data[3], data[4]] not in usuarios:
+            if data[5][0] not in '123456789':
+                usuarios.append([data[0], data[2], data[1], data[3], f'{data[4]}, {data[5]}'[1:-1]])
+            else:
+                usuarios.append([data[0], data[2], data[1], data[3], f'{data[4]}'])
 
 with open('datos_modificados/paises.csv', 'w+', encoding='UTF-8') as file:
     for pais in paises:
@@ -45,6 +54,9 @@ with open('datos_modificados/viajes.csv', 'w+', encoding='UTF-8') as file:
 
 with open('datos_modificados/tickets.csv', 'w+', encoding='UTF-8') as file:
     for numero_ticket, ticket in enumerate(tickets, 1):
-        print(ticket)
         file.write(f'{numero_ticket}, {ticket[0]}, {ticket[1]}, {ticket[2]}, {ticket[3]}, {ticket[4]}\n')
 
+
+spamWriter = csv.writer(open('datos_modificados/usuarios.csv', 'w+', encoding='UTF-8'))
+for usuario in usuarios:
+    spamWriter.writerow([usuario[0], usuario[1], usuario[2], usuario[3], usuario[4]])
