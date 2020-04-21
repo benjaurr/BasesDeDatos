@@ -23,7 +23,7 @@
   
       <?php
         foreach ($usercorreo as $p) {
-          echo "<tr class="table-success"><td>$p[0]</td><td>$p[1]</td></tr>";
+          echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
       }
       ?>
       
