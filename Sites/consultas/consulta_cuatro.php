@@ -21,7 +21,7 @@
     </tr>
   <?php
 	
-  		echo "<tr class="table-primary"> <td>$dinero</tr>";
+  		echo "<tr> <td>$dinero</tr>";
 	
   ?>
 	</table>

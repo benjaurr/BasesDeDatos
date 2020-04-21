@@ -19,7 +19,7 @@
     </tr>
   <?php
 	foreach ($datos as $d){
-        echo "<tr class="table-secondary"><td>$d[0]</td><td>$d[1]</td><td>$d[2]</td><td>$d[3]</td><td>$d[4]</td></tr>";
+        echo "<tr><td>$d[0]</td><td>$d[1]</td><td>$d[2]</td><td>$d[3]</td><td>$d[4]</td></tr>";
     }
 	
   ?>

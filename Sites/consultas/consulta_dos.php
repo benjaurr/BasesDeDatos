@@ -19,7 +19,7 @@
     </tr>
   <?php
   foreach ($cuidades as $p) {
-    echo "<tr class="table-danger"> <td>$p</td> </tr>";
+    echo "<tr> <td>$p</td> </tr>";
   }
   ?>
   </table>
