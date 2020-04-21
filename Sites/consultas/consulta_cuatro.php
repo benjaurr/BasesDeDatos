@@ -9,7 +9,7 @@
 	$uid = $_POST["uid"];
 
 
- 	$query = "SELECT SUM(precio) FROM Viajes, Tickets WHERE ticket.uid = $uid";
+ 	$query = "SELECT SUM(precio) FROM Viajes, Tickets WHERE ticket.uid = $uid;";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$dinero = $result -> fetchAll();
