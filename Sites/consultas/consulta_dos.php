@@ -19,7 +19,7 @@
     </tr>
   <?php
   foreach ($cuidades as $p) {
-    echo "<tr> <td>$p</td> </tr>";
+    echo "<tr> <td>$p[0]</td> </tr>";
   }
   ?>
   </table>
