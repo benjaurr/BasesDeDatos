@@ -43,30 +43,39 @@ re.close()
 
 
 with open('datos_modificados/paises.csv', 'w+', encoding='UTF-8') as file:
+    escritor_paises = csv.writer(file)
+    escritor_paises.writerow(['pnombre', 'numero_contacto'])
     for pais in paises:
-        file.write(f'{pais[0],pais[1]}\n')
+        escritor_paises.writerow([pais[0], pais[1]])
 
 with open('datos_modificados/ciudades.csv', 'w+', encoding='UTF-8') as file:
+    escritor_ciudades = csv.writer(file)
+    escritor_ciudades.writerow(['id_ciudad', 'cnombre', 'pnombre'])
     for idciudad, ciudad in enumerate(ciudades, 1):
         file.write(f'{idciudad},{ciudad[0]},{ciudad[1]}\n')
 
 with open('datos_modificados/viajes.csv', 'w+', encoding='UTF-8') as file:
+    escritor_viajes = csv.writer(file)
+    escritor_viajes.writerow(['id_viaje', 'id_ciudad_origen', 'id_ciudad_destino', 'hora_de_salida', 'medio', 'capacidad_maxima', 'duracion', 'precio'])
     for idviaje, viaje in enumerate(viajes, 1):
         file.write(f'{idviaje},{viaje[0]},{viaje[1]},{viaje[2]},{viaje[3]},{viaje[4]},{viaje[5]},{viaje[6]}\n')
 
 with open('datos_modificados/tickets.csv', 'w+', encoding='UTF-8') as file:
+    escritor_tickets = csv.writer(file)
+    escritor_tickets.writerow(['numero_ticket', 'usario_id', 'id_viaje', 'fecha_compra', 'numero_de_asiento', 'fecha_viaje'])
     for numero_ticket, ticket in enumerate(tickets, 1):
         file.write(f'{numero_ticket},{ticket[0]},{ticket[1]},{ticket[2]},{ticket[3]},{ticket[4]}\n')
 
-
 file_usuarios = open('datos_modificados/usuarios.csv', 'w', encoding='UTF-8')
 escritor_usuarios = csv.writer(file_usuarios)
+escritor_usuarios.writerow(['usario_id', 'username', 'nombre', 'correo', 'direccion'])
 for usuario in usuarios:
     escritor_usuarios.writerow([usuario[0], usuario[1], usuario[2], usuario[3], usuario[4]])
 file_usuarios.close()
 
 file_hoteles = open('datos_modificados/hoteles.csv', 'w', encoding='UTF-8')
 escritor_hoteles = csv.writer(file_hoteles)
+escritor_hoteles.writerow(['id_hotel', 'id_ciudad', 'direccion', 'telefono', 'precio'])
 for hotel in hoteles:
     nc = hotel[1]
     for idc, ciudad in enumerate(ciudades, 1):
@@ -77,8 +86,7 @@ file_hoteles.close()
 
 file_reservas = open('datos_modificados/reservas.csv', 'w', encoding='UTF-8')
 escritor_reservas = csv.writer(file_reservas)
+escritor_reservas.writerow(['id_reserva', 'id_hotel', 'usuario_id', 'fecha_llega', 'fecha_salida'])
 for rid, reserva in enumerate(reservas, 1):
     escritor_reservas.writerow([rid, reserva[0], reserva[1], reserva[2], reserva[3]])
 file_reservas.close()
-
-print(reservas)

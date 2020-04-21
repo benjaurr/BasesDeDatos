@@ -1,5 +1,6 @@
-('Italia', '433-666-975')
-('Francia', '133-154-268')
-('Bélgica', '758-382-381')
-('Alemania', '199-786-913')
-('Inglaterra', '129-666-539')
+pnombre,numero_contacto
+Italia,433-666-975
+Francia,133-154-268
+Bélgica,758-382-381
+Alemania,199-786-913
+Inglaterra,129-666-539

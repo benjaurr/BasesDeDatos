@@ -1,3 +1,4 @@
+id_viaje,id_ciudad_origen,id_ciudad_destino,hora_de_salida,medio,capacidad_maxima,duracion,precio
 1,Roma,Florencia,08:54:00,Tren,800,5,35
 2,Chantilly,París,11:12:00,Tren,800,4,32
 3,París,Florencia,23:50:00,Tren,800,3,40
