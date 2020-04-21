@@ -13,16 +13,18 @@
  	$query = "SELECT usuario_id, nombre, SUM(precio) FROM Usuarios, Tickets, Viajes WHERE fecha_llegada = $f_inicio AND fecha_salida = $f_fin;";
 	$result = $db -> prepare($query);
 	$result -> execute();
-	$dinero = $result -> fetchAll();
+	$datos = $result -> fetchAll();
   ?>
 
 	<table>
     <tr class="table-warning">
+      <th>ID Usuario</th>
+      <th> Nombre</th>
       <th>Dinero Gastado</th>
     </tr>
   <?php
 	
-  		echo "<tr> <td>$dinero</tr>";
+  		echo "<tr> <td>$dinero[0]<td><td>$dinero[1]<td<td>$dinero[2]<td>></tr>";
 	
   ?>
 	</table>
