@@ -15,18 +15,21 @@
 	$usercorreo = $result -> fetchAll();
   ?>
 
-  <table>
-    <tr class="table-success">
-      <th>Username</th>
-      <th>Correo</th>
-    </tr>
-  
+  <table class="table table-hover">
+    <thread>
+      <tr class="table-success">
+         <th>Username</th>
+         <th>Correo</th>
+      </tr>
+    </thread>
+    <tbody>
       <?php
         foreach ($usercorreo as $p) {
           echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
       }
       ?>
-      
+    
+    </tbody>
   </table>
 
 <?php include('../templates/footer.html'); ?>
