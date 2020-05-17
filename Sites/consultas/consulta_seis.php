@@ -22,9 +22,10 @@
       <th> Nombre</th>
       <th>Dinero Gastado</th>
     </tr>
-  <?php
-	
-  		echo "<tr> <td>$dinero[0]<td><td>$dinero[1]<td<td>$dinero[2]<td>></tr>";
+    <?php
+	  foreach ($datos as $d){
+        echo "<tr><td>$d[0]</td><td>$d[1]</td><td>$d[2]</td></tr>";
+    }
 	
   ?>
 	</table>
