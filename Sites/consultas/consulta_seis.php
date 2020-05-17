@@ -10,7 +10,7 @@
 	$f_fin = $_POST["f_fin"];
 
 
- 	$query = "SELECT usuario_id, nombre, SUM(precio) FROM Usuarios, Tickets, Viajes WHERE fecha_llegada = $f_inicio AND fecha_salida = $f_fin;";
+ 	$query = "SELECT Usuarios.usuario_id, Usuarios.nombre, SUM(Viajes.precio) FROM Usuarios, Tickets, Viajes WHERE Tickets.id_viaje = Viajes.id_viaje AND Tickets.usuario_id = Usuarios.usuario_id AND Tickets.fecha_de_compra >= $f_inicio AND Tickets.fecha_de_compra <= $f_fin GROUP BY Usuarios.usuario_id;";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$datos = $result -> fetchAll();
