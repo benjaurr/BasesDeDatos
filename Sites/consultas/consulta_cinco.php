@@ -15,7 +15,7 @@
 
 	<table>
     <tr class="table-secondary">
-      <th>Dinero Gastado</th>
+      <th>Reservas entre estas fechas</th>
     </tr>
   <?php
 	foreach ($datos as $d){
