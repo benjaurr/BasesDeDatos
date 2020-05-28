@@ -34,7 +34,7 @@ for line in csv.DictReader(re):
     u = [line['uid'], line['username'], line['nombreusuario'], line['correo'], line['direccionusuario']]
     if u not in usuarios:
         usuarios.append(u)
-    h = [line['hid'], line['nombreciudad'], line['direccionhotel'], line['telefono'], line['precionoche']]
+    h = [line['hid'], line['nombrehotel'], line['nombreciudad'], line['direccionhotel'], line['telefono'], line['precionoche']]
     if h not in hoteles:
         hoteles.append(h)
     r = [line['hid'], line['uid'], line['fechainicio'], line['fechatermino']]
@@ -82,13 +82,13 @@ file_usuarios.close()
 
 file_hoteles = open('datos_modificados/hoteles.csv', 'w', encoding='UTF-8')
 escritor_hoteles = csv.writer(file_hoteles)
-escritor_hoteles.writerow(['id_hotel', 'id_ciudad', 'direccion', 'telefono', 'precio'])
+escritor_hoteles.writerow(['id_hotel', 'nombre_hotel', 'id_ciudad', 'direccion', 'telefono', 'precio'])
 for hotel in hoteles:
     nc = hotel[1]
     for idc, ciudad in enumerate(ciudades, 1):
         if ciudad[0] == nc:
             hotel[1] = idc
-    escritor_hoteles.writerow([hotel[0], hotel[1], hotel[2], hotel[3], hotel[4]])
+    escritor_hoteles.writerow([hotel[0], hotel[1], hotel[1], hotel[2], hotel[3], hotel[4], hotel[5]])
 file_hoteles.close()
 
 file_reservas = open('datos_modificados/reservas.csv', 'w', encoding='UTF-8')
