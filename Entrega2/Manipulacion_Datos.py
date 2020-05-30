@@ -19,15 +19,15 @@ with open('datos_originales/ciudades-paises.csv', 'r', encoding='UTF-8') as file
         if [data[0], data[1]] not in ciudades:
             ciudades.append([data[0], data[1]])
 
+
 with open("datos_originales/tickets-destinos.csv", 'r', encoding='UTF-8') as file:
     file.readline()
     for line in file:
         data = line.strip().split(',')
-        viaje = [data[1], data[2], data[3], data[5], data[6], data[4], data[7], data[10]]
-        if viaje not in viajes:
-            viajes.append(viaje)
-        id_viaje = viajes.index(viaje) + 1
-        tickets.append([data[0], id_viaje, data[9], data[8]])
+        if [data[1], data[2], data[3], data[5], data[6], data[4], data[7]] not in viajes:
+            viajes.append([data[1], data[2], data[3], data[5], data[6], data[4], data[7]])
+        id_viaje = viajes.index([data[1], data[2], data[3], data[5], data[6], data[4], data[7]]) + 1
+        tickets.append([data[0], id_viaje, data[9], data[8], data[10]])
 
 re = open("datos_originales/usuarios-reservas-hoteles.csv", 'r', encoding='UTF-8')
 for line in csv.DictReader(re):
@@ -35,6 +35,7 @@ for line in csv.DictReader(re):
     if u not in usuarios:
         usuarios.append(u)
     h = [line['hid'], line['nombrehotel'], line['nombreciudad'], line['direccionhotel'], line['telefono'], line['precionoche']]
+    print(h)
     if h not in hoteles:
         hoteles.append(h)
     r = [line['hid'], line['uid'], line['fechainicio'], line['fechatermino']]
@@ -56,7 +57,7 @@ with open('datos_modificados/ciudades.csv', 'w+', encoding='UTF-8') as file:
 
 with open('datos_modificados/viajes.csv', 'w+', encoding='UTF-8') as file:
     escritor_viajes = csv.writer(file)
-    escritor_viajes.writerow(['id_viaje', 'id_ciudad_origen', 'id_ciudad_destino', 'hora_de_salida', 'medio', 'capacidad_maxima', 'duracion', 'precio', 'fecha_viaje'])
+    escritor_viajes.writerow(['id_viaje', 'id_ciudad_origen', 'id_ciudad_destino', 'hora_de_salida', 'medio', 'capacidad_maxima', 'duracion', 'precio'])
     for idviaje, viaje in enumerate(viajes, 1):
         cdo = viaje[0]
         cdd = viaje[1]
@@ -65,13 +66,13 @@ with open('datos_modificados/viajes.csv', 'w+', encoding='UTF-8') as file:
                 viaje[0] = idc
             elif ciudad[0] == cdd:
                 viaje[1] = idc
-        file.write(f'{idviaje},{viaje[0]},{viaje[1]},{viaje[2]},{viaje[3]},{viaje[4]},{viaje[5]},{viaje[6]},{viaje[7]}\n')
+        file.write(f'{idviaje},{viaje[0]},{viaje[1]},{viaje[2]},{viaje[3]},{viaje[4]},{viaje[5]},{viaje[6]}\n')
 
 with open('datos_modificados/tickets.csv', 'w+', encoding='UTF-8') as file:
     escritor_tickets = csv.writer(file)
-    escritor_tickets.writerow(['numero_ticket', 'usario_id', 'id_viaje', 'fecha_compra', 'numero_de_asiento'])
+    escritor_tickets.writerow(['numero_ticket', 'usario_id', 'id_viaje', 'fecha_compra', 'numero_de_asiento', 'fecha_viaje'])
     for numero_ticket, ticket in enumerate(tickets, 1):
-        file.write(f'{numero_ticket},{ticket[0]},{ticket[1]},{ticket[2]},{ticket[3]}\n')
+        file.write(f'{numero_ticket},{ticket[0]},{ticket[1]},{ticket[2]},{ticket[3]},{ticket[4]}\n')
 
 file_usuarios = open('datos_modificados/usuarios.csv', 'w', encoding='UTF-8')
 escritor_usuarios = csv.writer(file_usuarios)
